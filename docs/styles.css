@@ -1,0 +1,176 @@
+/* Style the navigation bar */
+.menu-banner {
+    background-color: #FFDAB9;  /* background */
+    padding: 10px 0;         /* Space around */
+    text-align: right;
+    position: fixed;         /* Stays at the top */
+    width: 100%;             /* Full width */
+    top: 0;
+    left: 0;
+    z-index: 1000;           /* On top of everything */
+}
+
+/* Style menu items */
+.menu-banner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-banner ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-banner ul li a {
+    text-decoration: none;
+    color: #808080;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-banner ul li a:hover {
+    color: #FFFFFF; /* Change color on hover */
+}
+
+/* Add spacing so content isn't hidden under the menu */
+body {
+    padding-top: 50px;
+}
+
+/* Menu icon styling */
+.menu-icon {
+    font-size: 30px;
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1001; /* Ensures it's above the sidebar */
+}
+
+/* Sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 0;  /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000; /* Positioned on top of the content */
+}
+
+/* Sidebar links */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 16px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+}
+
+/* On hover, the sidebar expands */
+.sidebar:hover {
+    width: 250px;
+}
+
+/* Style the menu when the icon is clicked */
+#menu-icon:hover + .sidebar {
+    width: 250px;
+}
+
+/* Style for media (image and video) */
+#media-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+#media-section .image {
+    width: 48%;
+    height: auto;
+}
+
+#media-section .video {
+    width: 48%;
+    height: auto;
+}
+
+#roadmap-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#roadmap {
+    width: 45%;
+}
+
+#roadmap h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#roadmap ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#roadmap ul li {
+    margin-bottom: 15px;
+}
+
+#roadmap ul li button {
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#roadmap ul li button:hover {
+    background-color: #555;
+}
+
+#media-section {
+    width: 45%;
+    text-align: center;
+}
+
+#media-section .image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#media-section .video {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Introduction text styling */
+#introduction {
+    margin: 40px 0;
+}
+
+#introduction h2 {
+    font-size: 28px;
+}
+
+#introduction p {
+    font-size: 18px;
+}
